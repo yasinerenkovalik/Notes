@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Notes.Domail;
 
-namespace Notes.Persistence;
+namespace Notes.Persistence.Repository;
 
-public class Context:DbContext
+public class Context : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -15,13 +15,13 @@ public class Context:DbContext
     {
         modelBuilder.Entity<User>()
             .HasMany(u => u.Notes)
-            .WithOne(n=>n.User);
+            .WithOne(n => n.User);
     }
 
     public DbSet<User> Users { get; set; }
 
     public DbSet<Note> Notes { get; set; }
-  
+
 
 
 }

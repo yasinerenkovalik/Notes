@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Infrastructure\\Notes.Infrastructure.csproj": {}
+    "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\Notes.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Infrastructure\\Notes.Infrastructure.csproj": {
+    "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\Notes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Infrastructure\\Notes.Infrastructure.csproj",
-        "projectName": "Notes.Infrastructure",
-        "projectPath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Infrastructure\\Notes.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\Notes.Domain.csproj",
+        "projectName": "Notes.Domain",
+        "projectPath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\Notes.Domain.csproj",
         "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",

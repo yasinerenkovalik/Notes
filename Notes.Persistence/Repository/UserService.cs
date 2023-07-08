@@ -1,10 +1,10 @@
 using System.Linq.Expressions;
-using Notes.Application;
+using Notes.Application.Repository;
 using Notes.Domail;
 
-namespace Notes.Persistence;
+namespace Notes.Persistence.Repository;
 
-public class UserService:IUserService
+public class UserService : IUserRepository
 {
     private readonly Context _context;
     public UserService(Context context)

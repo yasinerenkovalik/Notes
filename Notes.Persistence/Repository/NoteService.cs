@@ -1,4 +1,4 @@
-﻿using Notes.Application;
+﻿using Notes.Application.Repository;
 using Notes.Domail;
 using System;
 using System.Collections.Generic;
@@ -7,9 +7,9 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Notes.Persistence
+namespace Notes.Persistence.Repository
 {
-    public class NoteService : INoteService
+    public class NoteService : INoteRepository
     {
         public void Add(Note note)
         {

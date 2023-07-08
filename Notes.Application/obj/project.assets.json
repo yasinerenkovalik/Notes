@@ -27,34 +27,43 @@
     ]
   },
   "packageFolders": {
-    "/Users/eren/.nuget/packages/": {}
+    "C:\\Users\\hamza\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/eren/Desktop/Notes/Notes/Notes.Application/Notes.Application.csproj",
+      "projectUniqueName": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Application\\Notes.Application.csproj",
       "projectName": "Notes.Application",
-      "projectPath": "/Users/eren/Desktop/Notes/Notes/Notes.Application/Notes.Application.csproj",
-      "packagesPath": "/Users/eren/.nuget/packages/",
-      "outputPath": "/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/",
+      "projectPath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Application\\Notes.Application.csproj",
+      "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/eren/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/Users/eren/Downloads/monodevelop-nuget-extensions-main": {},
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/eren/Desktop/Notes/Notes/Notes.Domain/Notes.Domain.csproj": {
-              "projectPath": "/Users/eren/Desktop/Notes/Notes/Notes.Domain/Notes.Domain.csproj"
+            "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\Notes.Domain.csproj": {
+              "projectPath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\Notes.Domain.csproj"
             }
           }
         }
@@ -84,7 +93,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

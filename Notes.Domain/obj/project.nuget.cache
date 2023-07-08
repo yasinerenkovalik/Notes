@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hKXo19GVyjqxDRnkN2rAAPDbN+9xVM4bzFH9SPieqYQY2SA4wUzq/6X4A9c688YZeX4CfiO7Pj5ZpzhWjHI0uw==",
+  "dgSpecHash": "AzkKGkVAlqaqeFcqd2Ki+BpzvOZ4H0ldwrlDyXPJOFBkaLKKWNh1vcFjMAG6H97UgAnPWViyGpqW60U+M1MzuQ==",
   "success": true,
-  "projectFilePath": "/Users/eren/Desktop/Notes/Notes/Notes.Domain/Notes.Domain.csproj",
+  "projectFilePath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\Notes.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

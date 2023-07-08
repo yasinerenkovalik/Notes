@@ -1,6 +1,6 @@
-using Notes.Application;
+using Notes.Application.Repository;
 using Notes.Domail;
-using Notes.Persistence;
+using Notes.Persistence.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +12,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<Context>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<INoteService, NoteService>();
+builder.Services.AddScoped<IUserRepository, UserService>();
+builder.Services.AddScoped<INoteRepository, NoteService>();
 
 
 var app = builder.Build();
