@@ -7,7 +7,7 @@ public interface INoteService
 {
     void Add(Note note);
     void Update(Note note);
-    void Deleted(Note not);
+    void Deleted(Note note);
 
     List<Note> GetAll(Expression<Func<Note,bool>>? filter=null);
     Note Get(Expression<Func<Note,bool>> filter);
