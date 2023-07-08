@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/eren/Desktop/Notes/Notes/Notes.Domail/Notes.Domail.csproj",
-      "projectName": "Notes.Domail",
-      "projectPath": "/Users/eren/Desktop/Notes/Notes/Notes.Domail/Notes.Domail.csproj",
+      "projectUniqueName": "/Users/eren/Desktop/Notes/Notes/Notes.Domain/Notes.Domain.csproj",
+      "projectName": "Notes.Domain",
+      "projectPath": "/Users/eren/Desktop/Notes/Notes/Notes.Domain/Notes.Domain.csproj",
       "packagesPath": "/Users/eren/.nuget/packages/",
-      "outputPath": "/Users/eren/Desktop/Notes/Notes/Notes.Domail/obj/",
+      "outputPath": "/Users/eren/Desktop/Notes/Notes/Notes.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/eren/.nuget/NuGet/NuGet.Config"
