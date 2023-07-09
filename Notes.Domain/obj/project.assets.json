@@ -8,35 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\hamza\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/eren/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\Notes.Domain.csproj",
+      "projectUniqueName": "/Users/eren/Desktop/Notes/Notes/Notes.Domain/Notes.Domain.csproj",
       "projectName": "Notes.Domain",
-      "projectPath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\Notes.Domain.csproj",
-      "packagesPath": "C:\\Users\\hamza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hamza\\OneDrive\\Masaüstü\\project\\BackEnd\\Notes\\Notes.Domain\\obj\\",
+      "projectPath": "/Users/eren/Desktop/Notes/Notes/Notes.Domain/Notes.Domain.csproj",
+      "packagesPath": "/Users/eren/.nuget/packages/",
+      "outputPath": "/Users/eren/Desktop/Notes/Notes/Notes.Domain/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\hamza\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/eren/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+        "/Users/eren/Downloads/monodevelop-nuget-extensions-main": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
       }
     }
   }
