@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Notes.Persistence.Repository
 {
-    public class NoteService : INoteRepository
+    public class NoteRepository : INoteRepository
     {
         private readonly Context _context;
-        public NoteService(Context context)
+        public NoteRepository(Context context)
         {
             _context = context;
         }

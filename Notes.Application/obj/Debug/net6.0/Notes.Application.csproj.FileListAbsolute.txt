@@ -1,0 +1,15 @@
+/Users/eren/Desktop/Notes/Notes/Notes.Application/bin/Debug/net6.0/Notes.Application.deps.json
+/Users/eren/Desktop/Notes/Notes/Notes.Application/bin/Debug/net6.0/Notes.Application.dll
+/Users/eren/Desktop/Notes/Notes/Notes.Application/bin/Debug/net6.0/Notes.Application.pdb
+/Users/eren/Desktop/Notes/Notes/Notes.Application/bin/Debug/net6.0/Notes.Domain.dll
+/Users/eren/Desktop/Notes/Notes/Notes.Application/bin/Debug/net6.0/Notes.Domain.pdb
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/Notes.Application.csproj.AssemblyReference.cache
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/Notes.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/Notes.Application.AssemblyInfoInputs.cache
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/Notes.Application.AssemblyInfo.cs
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/Notes.Application.csproj.CoreCompileInputs.cache
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/Notes.Application.csproj.CopyComplete
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/Notes.Application.dll
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/refint/Notes.Application.dll
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/Notes.Application.pdb
+/Users/eren/Desktop/Notes/Notes/Notes.Application/obj/Debug/net6.0/ref/Notes.Application.dll

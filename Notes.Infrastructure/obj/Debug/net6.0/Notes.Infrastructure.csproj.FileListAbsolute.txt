@@ -1,0 +1,12 @@
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/bin/Debug/net6.0/Notes.Infrastructure.deps.json
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/bin/Debug/net6.0/Notes.Infrastructure.dll
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/bin/Debug/net6.0/Notes.Infrastructure.pdb
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/obj/Debug/net6.0/Notes.Infrastructure.csproj.AssemblyReference.cache
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/obj/Debug/net6.0/Notes.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/obj/Debug/net6.0/Notes.Infrastructure.AssemblyInfoInputs.cache
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/obj/Debug/net6.0/Notes.Infrastructure.AssemblyInfo.cs
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/obj/Debug/net6.0/Notes.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/obj/Debug/net6.0/Notes.Infrastructure.dll
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/obj/Debug/net6.0/refint/Notes.Infrastructure.dll
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/obj/Debug/net6.0/Notes.Infrastructure.pdb
+/Users/eren/Desktop/Notes/Notes/Notes.Infrastructure/obj/Debug/net6.0/ref/Notes.Infrastructure.dll

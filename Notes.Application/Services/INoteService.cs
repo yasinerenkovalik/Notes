@@ -1,13 +1,9 @@
 using Notes.Application.Repository;
+using Notes.Domail;
 
 namespace Notes.Application.Services;
 
-public interface INoteService
+public interface INoteService:IGenericService<Note>
 {
-    void Add();
-    void Update();
-    void Deleted();
-
-     
     
 }

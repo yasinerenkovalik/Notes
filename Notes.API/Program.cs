@@ -1,6 +1,9 @@
 using Notes.Application.Repository;
+using Notes.Application.Services;
 using Notes.Domail;
 using Notes.Persistence.Repository;
+using Notes.Persistence.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +16,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<Context>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<INoteRepository, NoteService>();
+builder.Services.AddScoped<INoteRepository, NoteRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<INoteService, NoteService>();
+
 
 
 var app = builder.Build();
@@ -30,5 +36,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();
