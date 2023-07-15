@@ -7,28 +7,41 @@ namespace Notes.Persistence.Services;
 
 public class NoteService:INoteService
 {
-    public Note Add(Note entity)
+    private readonly INoteRepository noteService;
+    public NoteService(INoteRepository _noteService)
     {
-        throw new NotImplementedException();
+        noteService = _noteService;
+    }
+    public string Add(Note entity)
+    {
+       noteService.Add(entity);
+        return "başarılı";
     }
 
-    public Note Update(Note entity)
+    public string Update(Note entity)
     {
-        throw new NotImplementedException();
+        noteService.Update(entity);
+        return "result";
     }
 
-    public Note Delete(Note entity)
+    public string Delete(Note entity)
     {
-        throw new NotImplementedException();
+        noteService.Deleted(entity);
+        return "result";
     }
 
     public List<Note> GetAll()
     {
-        throw new NotImplementedException();
+        var result = noteService.GetAll();
+        return result;
     }
 
     public Note GetById(int id)
     {
-        throw new NotImplementedException();
+        var result = noteService.Get(p => p.Id == id);
+        return result;
+
     }
+
+  
 }

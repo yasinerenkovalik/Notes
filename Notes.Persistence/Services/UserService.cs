@@ -13,21 +13,23 @@ public class UserService:IUserService
         _userRepository = userRepository;
     }
 
-    public User Add(User entity)
+    public string Add(User entity)
     {
         _userRepository.Add(entity);
-        return entity;
+        return "entity";
 
     }
 
-    public User Update(User entity)
+    public string Update(User entity)
     {
-        throw new NotImplementedException();
+        _userRepository.Update(entity);
+        return "entity";
     }
 
-    public User Delete(User entity)
+    public string Delete(User entity)
     {
-        throw new NotImplementedException();
+        _userRepository.Deleted(entity);
+        return "entity";
     }
 
     public List<User> GetAll()
@@ -37,6 +39,11 @@ public class UserService:IUserService
 
     public User GetById(int id)
     {
-        throw new NotImplementedException();
+        return _userRepository.GeyById(id) ?? throw new InvalidOperationException();
+    }
+
+    public string Login(string email, string password)
+    {
+        return _userRepository.Login(email, password);
     }
 }

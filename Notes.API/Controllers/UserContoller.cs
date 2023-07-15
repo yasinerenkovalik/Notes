@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Notes.Application.Services;
 using Notes.Domail;
-using Notes.Persistence.Repository;
-using Notes.Persistence.Services;
+
 
 namespace Notes.API.Controllers;
 
@@ -31,6 +30,41 @@ public class UserContoller : ControllerBase
         var result= _userService.GetAll();
         return Ok(result);
     }
+    [HttpGet("getbyid")]
+    public IActionResult GetById(int id)
+    {
+        var result= _userService.GetById(id);
+        return Ok(result);
+    }
+
+    [HttpDelete("delete")]
+
+    public IActionResult Delete(User user)
+    {
+        var result = _userService.Delete(user);
+        return Ok(result);
+    }
+    [HttpPost("update")]
+
+    public IActionResult Update(User user)
+    {
+        var result = _userService.Update(user);
+        return Ok(result);
+    }
+
+    [HttpPost("login")]
+    public IActionResult Login(string mail, string password)
+    {
+        var result = _userService.Login(mail, password);
+        if (result!=null)
+        {
+            return Ok("giriş başarılı");
+        }
+
+        return Ok("giriş başarıısız");
+    }
+   
+    
 
   
 }

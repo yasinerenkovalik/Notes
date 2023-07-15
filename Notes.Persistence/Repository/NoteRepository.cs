@@ -28,7 +28,7 @@ namespace Notes.Persistence.Repository
             addedEntity.State = EntityState.Detached;
         }
 
-        public Note Get(Expression<Func<Note, bool>> filter)
+        public Note? Get(Expression<Func<Note?, bool>> filter)
         {
             return _context.Set<Note>().FirstOrDefault(filter);
         }

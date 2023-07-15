@@ -37,6 +37,22 @@ public class UserRepository : IUserRepository
         addedEntity.State = EntityState.Detached;
     }
 
+    public User GeyById(int id)
+    {
+        return _context.Set<User>().FirstOrDefault(n => n.Id == id);
+    }
+
+    public string Login(string mail, string password)
+    {
+       var login= _context.Set<User>().FirstOrDefault(n => n.Email == mail && n.PhoneNumber == password);
+       if (login!=null)
+       {
+           return "başarılı";
+       }
+
+       return "giriş başarısız";
+    }
+
     public List<User> GetAll(Expression<Func<User, bool>>? filter = null)
     {
         return filter == null ? _context.Set<User>().ToList() :
@@ -45,6 +61,12 @@ public class UserRepository : IUserRepository
 
     public User Get(Expression<Func<User, bool>> filter)
     {
-        return _context.Set<User>().FirstOrDefault(filter);
+        return _context.Set<User>().FirstOrDefault(filter) ?? throw new InvalidOperationException();
     }
+
+  
+
+   
+
+  
 }

@@ -10,5 +10,5 @@ public interface INoteRepository
     void Deleted(Note note);
 
     List<Note> GetAll(Expression<Func<Note, bool>>? filter = null);
-    Note Get(Expression<Func<Note, bool>> filter);
+    Note? Get(Expression<Func<Note?, bool>> filter);
 }
