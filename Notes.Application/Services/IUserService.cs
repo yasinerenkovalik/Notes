@@ -4,5 +4,5 @@ namespace Notes.Application.Services;
 
 public interface IUserService:IGenericService<User>
 {
-    string Login(string email, string password);
+    bool Login(string email, string password);
 }

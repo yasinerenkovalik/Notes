@@ -42,15 +42,15 @@ public class UserRepository : IUserRepository
         return _context.Set<User>().FirstOrDefault(n => n.Id == id);
     }
 
-    public string Login(string mail, string password)
+    public bool Login(string mail, string password)
     {
-       var login= _context.Set<User>().FirstOrDefault(n => n.Email == mail && n.PhoneNumber == password);
+       var login= _context.Set<User>().Where(n => n.Email == mail && n.PhoneNumber == password).FirstOrDefault();
        if (login!=null)
        {
-           return "başarılı";
+           return true;
        }
 
-       return "giriş başarısız";
+       return false;
     }
 
     public List<User> GetAll(Expression<Func<User, bool>>? filter = null)
@@ -61,7 +61,7 @@ public class UserRepository : IUserRepository
 
     public User Get(Expression<Func<User, bool>> filter)
     {
-        return _context.Set<User>().FirstOrDefault(filter) ?? throw new InvalidOperationException();
+        return _context.Set<User>().FirstOrDefault(filter);
     }
 
   

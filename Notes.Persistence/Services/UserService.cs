@@ -42,8 +42,14 @@ public class UserService:IUserService
         return _userRepository.GeyById(id) ?? throw new InvalidOperationException();
     }
 
-    public string Login(string email, string password)
+    public bool Login(string email, string password)
     {
-        return _userRepository.Login(email, password);
+        var result = _userRepository.Login(email, password);
+        if (result !=null)
+        {
+            return true;
+        }
+
+        return false;
     }
 }

@@ -56,12 +56,12 @@ public class UserContoller : ControllerBase
     public IActionResult Login(string mail, string password)
     {
         var result = _userService.Login(mail, password);
-        if (result!=null)
+        if (result==true)
         {
-            return Ok("giriş başarılı");
+            return Ok("giriş başarılı123");
         }
 
-        return Ok("giriş başarıısız");
+        return Ok("giriş başarıısız321");
     }
    
     
