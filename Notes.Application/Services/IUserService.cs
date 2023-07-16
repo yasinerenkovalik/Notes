@@ -4,5 +4,6 @@ namespace Notes.Application.Services;
 
 public interface IUserService:IGenericService<User>
 {
-    bool Login(string email, string password);
+    string Login(string email, string password);
+    void SenMail(string mail);
 }

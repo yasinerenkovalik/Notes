@@ -11,6 +11,7 @@ public class Context : DbContext
             "User ID=postgres;Password=123456;Host=localhost;Port=5432;Database=Notes;Pooling=true;Connection Lifetime=0;");
     }
 
+  
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<User>()

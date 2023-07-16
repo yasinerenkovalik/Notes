@@ -1,6 +1,13 @@
+using System.Net.Mail;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit;
+using MimeKit.Text;
 using Notes.Application.Services;
 using Notes.Domail;
+using MailKit.Security;
+using SmtpClient = MailKit.Net.Smtp.SmtpClient;
+using System.Net.Mail;
+
 
 
 namespace Notes.API.Controllers;
@@ -21,10 +28,10 @@ public class UserContoller : ControllerBase
     public IActionResult Add(User user)
     {
        var result= _userService.Add(user);
-        return Ok(result);
+        return Ok("kayıt işlemi tamamlandı");
     }
 
-    [HttpGet]
+    [HttpGet("get")]
     public IActionResult GetAll()
     {
         var result= _userService.GetAll();
@@ -53,15 +60,35 @@ public class UserContoller : ControllerBase
     }
 
     [HttpPost("login")]
-    public IActionResult Login(string mail, string password)
+    public IActionResult Login(string email, string password)
     {
-        var result = _userService.Login(mail, password);
-        if (result==true)
+        var result = _userService.Login(email, password);
+        
+        if (result!=null)
         {
-            return Ok("giriş başarılı123");
+            return Ok(result);
         }
 
-        return Ok("giriş başarıısız321");
+        return Ok("false");
+    }
+
+    [HttpPost("mail")]
+    public IActionResult SendMail()
+    {
+        var email = new MimeMessage();
+        email.From.Add(MailboxAddress.Parse("avcikiz25@gmail.com"));
+        email.To.Add(MailboxAddress.Parse("erenkovalik42@gmail.com"));
+        email.Subject = "test mail";
+        email.Body = new TextPart(TextFormat.Html) { Text = "merhabalarr" };
+        using var smtp = new SmtpClient();
+        smtp.Connect("smtp.gmail.com",587,SecureSocketOptions.StartTls);
+        smtp.Authenticate("avcikiz25@gmail.com","ereh iztr wqqp eurz");
+        smtp.Send(email);
+        smtp.Disconnect(true);
+        return Ok();
+
+
+
     }
    
     

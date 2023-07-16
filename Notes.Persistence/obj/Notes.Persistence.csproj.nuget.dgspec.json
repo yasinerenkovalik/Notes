@@ -20,7 +20,6 @@
           "net6.0"
         ],
         "sources": {
-          "/Users/eren/Downloads/monodevelop-nuget-extensions-main": {},
           "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -79,7 +78,6 @@
           "net6.0"
         ],
         "sources": {
-          "/Users/eren/Downloads/monodevelop-nuget-extensions-main": {},
           "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -134,7 +132,6 @@
           "net6.0"
         ],
         "sources": {
-          "/Users/eren/Downloads/monodevelop-nuget-extensions-main": {},
           "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -161,6 +158,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0-preview.5.23280.1, )"
@@ -170,6 +175,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0-preview.5.23280.1, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

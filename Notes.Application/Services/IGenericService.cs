@@ -1,6 +1,6 @@
 namespace Notes.Application.Services;
 
-public interface IGenericService<T> where T :IEntity
+public interface IGenericService<T> where T  :IEntity
 {
     string Add(T entity);
     string Update(T entity);

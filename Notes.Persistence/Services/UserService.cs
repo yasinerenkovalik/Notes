@@ -34,6 +34,7 @@ public class UserService:IUserService
 
     public List<User> GetAll()
     {
+        
         return _userRepository.GetAll();
     }
 
@@ -42,14 +43,21 @@ public class UserService:IUserService
         return _userRepository.GeyById(id) ?? throw new InvalidOperationException();
     }
 
-    public bool Login(string email, string password)
+    public string Login(string email, string password)
     {
         var result = _userRepository.Login(email, password);
-        if (result !=null)
+        if (result != null)
         {
-            return true;
+            return result;
         }
 
-        return false;
+        return "false";
+    }
+
+    public void SenMail(string mail)
+    {
+        _userRepository.MailSend("avcikiz25@gmail.com");
+      
+        
     }
 }

@@ -8,7 +8,9 @@ public interface IUserRepository
     void Update(User user);
     void Deleted(User user);
     User GeyById(int id);
-    bool Login(string mail, string password);
+    string Login(string mail, string password);
+    void MailSend(string mail);
+    
 
     List<User> GetAll(Expression<Func<User, bool>>? filter = null);
     User Get(Expression<Func<User, bool>> filter);
