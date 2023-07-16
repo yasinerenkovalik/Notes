@@ -45,7 +45,7 @@ public class UserService:IUserService
     public bool Login(string email, string password)
     {
         var result = _userRepository.Login(email, password);
-        if (result !=null)
+        if (result != null)
         {
             return true;
         }

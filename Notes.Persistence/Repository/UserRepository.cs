@@ -42,15 +42,10 @@ public class UserRepository : IUserRepository
         return _context.Set<User>().FirstOrDefault(n => n.Id == id);
     }
 
-    public bool Login(string mail, string password)
+    public User Login(string mail, string password)
     {
        var login= _context.Set<User>().Where(n => n.Email == mail && n.PhoneNumber == password).FirstOrDefault();
-       if (login!=null)
-       {
-           return true;
-       }
-
-       return false;
+       return login;
     }
 
     public List<User> GetAll(Expression<Func<User, bool>>? filter = null)
