@@ -51,7 +51,7 @@ public class UserService:IUserService
             return result;
         }
 
-        return "false";
+        return "kullanıcı bulunamadı";
     }
 
     public void SenMail(string mail)
