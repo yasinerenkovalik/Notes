@@ -76,7 +76,7 @@ public class UserContoller : ControllerBase
     public IActionResult SendMail()
     {
         var email = new MimeMessage();
-        email.From.Add(MailboxAddress.Parse("avcikiz25@gmail.com"));
+        email.From.Add(MailboxAddress.Parse("yasinerenkovalik@gmail.com"));
         email.To.Add(MailboxAddress.Parse("erenkovalik42@gmail.com"));
         email.Subject = "test mail";
         email.Body = new TextPart(TextFormat.Html) { Text = "merhabalarr" };
