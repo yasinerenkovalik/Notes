@@ -82,7 +82,7 @@ public class UserContoller : ControllerBase
         email.Body = new TextPart(TextFormat.Html) { Text = "merhabalarr" };
         using var smtp = new SmtpClient();
         smtp.Connect("smtp.gmail.com",587,SecureSocketOptions.StartTls);
-        smtp.Authenticate("avcikiz25@gmail.com","ereh iztr wqqp eurz");
+        smtp.Authenticate("erenkovalik42@gmail.com","ereh iztr wqqp eurz");
         smtp.Send(email);
         smtp.Disconnect(true);
         return Ok();
