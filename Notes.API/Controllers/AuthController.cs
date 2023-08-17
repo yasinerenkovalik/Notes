@@ -19,8 +19,7 @@ namespace Notes.API.Controllers
             var claims = new[]
             {
                 new Claim(ClaimTypes.Name, email),
-                new Claim(ClaimTypes.Country, "turkey"),
-                
+
                 new Claim(JwtRegisteredClaimNames.Email, email)
             };
             var singninKey = "bubenimsigninkeyim";

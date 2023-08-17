@@ -5,8 +5,8 @@ using MimeKit.Text;
 using Notes.Application.Services;
 using Notes.Domail;
 using MailKit.Security;
+using Notes.Persistence.DTOs;
 using SmtpClient = MailKit.Net.Smtp.SmtpClient;
-using System.Net.Mail;
 
 
 
@@ -28,7 +28,7 @@ public class UserContoller : ControllerBase
     public IActionResult Add(User user)
     {
        var result= _userService.Add(user);
-        return Ok("kayıt işlemi tamamlandı");
+        return Ok(result);
     }
 
     [HttpGet("get")]
@@ -53,8 +53,9 @@ public class UserContoller : ControllerBase
     }
     [HttpPost("update")]
 
-    public IActionResult Update(User user)
+    public IActionResult Update(UserDTO user)
     {
+        user.UpdateDate = DateTime.UtcNow;
         var result = _userService.Update(user);
         return Ok(result);
     }
@@ -66,10 +67,11 @@ public class UserContoller : ControllerBase
         
         if (result!=null)
         {
+            
             return Ok(result);
         }
 
-        return Ok("false");
+        return Ok(result);
     }
 
     [HttpPost("mail")]

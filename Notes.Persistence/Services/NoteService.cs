@@ -2,6 +2,7 @@ using System.Linq.Expressions;
 using Notes.Application.Repository;
 using Notes.Application.Services;
 using Notes.Domail;
+using Notes.Persistence.DTOs;
 
 namespace Notes.Persistence.Services;
 
@@ -16,6 +17,11 @@ public class NoteService:INoteService
     {
        noteService.Add(entity);
         return "başarılı";
+    }
+
+    public string Update(UserDTO entity)
+    {
+        throw new NotImplementedException();
     }
 
     public string Update(Note entity)
@@ -41,6 +47,12 @@ public class NoteService:INoteService
         var result = noteService.Get(p => p.Id == id);
         return result;
 
+    }
+
+    public List<Note> UserNotes(int id)
+    {
+        var notes = noteService.GetUserNotes(id);
+        return notes;
     }
 
   

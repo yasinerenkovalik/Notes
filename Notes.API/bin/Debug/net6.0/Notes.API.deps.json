@@ -2567,8 +2567,10 @@
       },
       "Notes.Persistence/1.0.0": {
         "dependencies": {
+          "MailKit": "4.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.15",
           "Microsoft.EntityFrameworkCore": "8.0.0-preview.5.23280.1",
+          "MimeKit": "4.1.0",
           "Notes.Application": "1.0.0",
           "Notes.Domain": "1.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0-preview.4"

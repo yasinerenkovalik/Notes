@@ -11,4 +11,6 @@ public interface INoteRepository
 
     List<Note> GetAll(Expression<Func<Note, bool>>? filter = null);
     Note? Get(Expression<Func<Note?, bool>> filter);
+
+    List<Note> GetUserNotes(int id);
 }

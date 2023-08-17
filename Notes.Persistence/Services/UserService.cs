@@ -1,7 +1,7 @@
-using System.Linq.Expressions;
 using Notes.Application.Repository;
 using Notes.Application.Services;
 using Notes.Domail;
+using Notes.Persistence.DTOs;
 
 namespace Notes.Persistence.Services;
 
@@ -15,16 +15,29 @@ public class UserService:IUserService
 
     public string Add(User entity)
     {
-        _userRepository.Add(entity);
-        return "entity";
+        var user= _userRepository.Add(entity);
+        if (user == true)
+        {
+            return "Kayıt İşlemi Bşarılı";
+        }
+
+        return "Böyle bir kullanıcı bulunmaktadır";
 
     }
 
     public string Update(User entity)
     {
+        throw new NotImplementedException();
+    }
+
+    public string Update(UserDTO entity)
+    {
         _userRepository.Update(entity);
         return "entity";
     }
+
+   
+
 
     public string Delete(User entity)
     {
@@ -37,7 +50,7 @@ public class UserService:IUserService
         
         return _userRepository.GetAll();
     }
-
+    
     public User GetById(int id)
     {
         return _userRepository.GeyById(id) ?? throw new InvalidOperationException();
@@ -56,8 +69,6 @@ public class UserService:IUserService
 
     public void SenMail(string mail)
     {
-        _userRepository.MailSend("avcikiz25@gmail.com");
-      
-        
+        throw new NotImplementedException();
     }
 }

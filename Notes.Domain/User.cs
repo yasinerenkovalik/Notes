@@ -7,7 +7,7 @@ public class User:BaseEntity
     public string Password { get; set; }
     public string PhoneNumber { get; set; }
     public string Email { get; set; }
-    public ICollection<Note>? Notes { get; set; }
-    public bool Active { get; set; }
-    public string Role { get; set; }
+    public string Code { get; set; }
+    public bool Active { get; set; } 
+    public string Role { get; set; } 
 }

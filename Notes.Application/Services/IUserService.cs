@@ -1,9 +1,12 @@
 using Notes.Domail;
+using Notes.Persistence.DTOs;
 
 namespace Notes.Application.Services;
 
-public interface IUserService:IGenericService<User>
+public interface IUserService:IGenericService<User> 
 {
     string Login(string email, string password);
-    void SenMail(string mail);
+    string Update(UserDTO user);
+
+
 }

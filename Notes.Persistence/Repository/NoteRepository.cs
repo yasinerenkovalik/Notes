@@ -33,6 +33,11 @@ namespace Notes.Persistence.Repository
             return _context.Set<Note>().FirstOrDefault(filter);
         }
 
+        public List<Note> GetUserNotes(int id)
+        {
+            return _context.Set<Note>().Where(n => n.UserId == id).ToList();
+        }
+
         public List<Note> GetAll(Expression<Func<Note, bool>>? filter = null)
         {
             return filter == null ? _context.Set<Note>().ToList() :
