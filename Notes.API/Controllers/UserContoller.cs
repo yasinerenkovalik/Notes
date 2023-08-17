@@ -78,13 +78,13 @@ public class UserContoller : ControllerBase
     public IActionResult SendMail()
     {
         var email = new MimeMessage();
-        email.From.Add(MailboxAddress.Parse("avcikiz25@gmail.com"));
+        email.From.Add(MailboxAddress.Parse("yasinerenkovalik@gmail.com"));
         email.To.Add(MailboxAddress.Parse("erenkovalik42@gmail.com"));
         email.Subject = "test mail";
         email.Body = new TextPart(TextFormat.Html) { Text = "merhabalarr" };
         using var smtp = new SmtpClient();
         smtp.Connect("smtp.gmail.com",587,SecureSocketOptions.StartTls);
-        smtp.Authenticate("avcikiz25@gmail.com","ereh iztr wqqp eurz");
+        smtp.Authenticate("erenkovalik42@gmail.com","ereh iztr wqqp eurz");
         smtp.Send(email);
         smtp.Disconnect(true);
         return Ok();
