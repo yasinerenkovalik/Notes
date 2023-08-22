@@ -15,14 +15,12 @@ public class NoteService:INoteService
     }
     public string Add(Note entity)
     {
-       noteService.Add(entity);
+      noteService.Add(entity);
+      
         return "başarılı";
     }
 
-    public string Update(UserDTO entity)
-    {
-        throw new NotImplementedException();
-    }
+ 
 
     public string Update(Note entity)
     {

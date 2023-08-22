@@ -7,5 +7,5 @@ namespace Notes.Application.Services;
 public interface INoteService:IGenericService<Note>
 {
     List<Note> UserNotes(int id);
-    string Update(UserDTO userDto);
+    string Update(Note note);
 }

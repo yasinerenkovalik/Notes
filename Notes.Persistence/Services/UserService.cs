@@ -25,10 +25,7 @@ public class UserService:IUserService
 
     }
 
-    public string Update(User entity)
-    {
-        throw new NotImplementedException();
-    }
+  
 
     public string Update(UserDTO entity)
     {

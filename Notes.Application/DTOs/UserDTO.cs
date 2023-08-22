@@ -3,7 +3,7 @@ using Notes.Domail;
 
 namespace Notes.Persistence.DTOs;
 
-public class UserDTO:IEntity
+public class UserDTO:BaseEntity
 {
     public string Name { get; set; }
     public string SurName { get; set; }
@@ -11,6 +11,5 @@ public class UserDTO:IEntity
     public string Email { get; set; }
     public bool Active { get; set; } 
     public string Role { get; set; }
-    public DateTime UpdateDate { get; set; }
- 
+  
 }

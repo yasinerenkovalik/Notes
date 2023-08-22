@@ -2,6 +2,7 @@
 using Notes.Domail;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
+using Notes.Persistence.DTOs;
 
 namespace Notes.Persistence.Repository
 {
@@ -28,6 +29,8 @@ namespace Notes.Persistence.Repository
             addedEntity.State = EntityState.Detached;
         }
 
+      
+
         public Note? Get(Expression<Func<Note?, bool>> filter)
         {
             return _context.Set<Note>().FirstOrDefault(filter);
@@ -38,11 +41,18 @@ namespace Notes.Persistence.Repository
             return _context.Set<Note>().Where(n => n.UserId == id).ToList();
         }
 
+        public void Delete(Note entity)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Note> GetAll(Expression<Func<Note, bool>>? filter = null)
         {
             return filter == null ? _context.Set<Note>().ToList() :
                 _context.Set<Note>().Where(filter).ToList();
         }
+
+      
 
         public void Update(Note note)
         {

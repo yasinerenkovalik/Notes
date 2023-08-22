@@ -180,6 +180,10 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.17.5, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[6.0.2, )"

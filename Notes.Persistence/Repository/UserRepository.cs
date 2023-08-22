@@ -48,7 +48,9 @@ public class UserRepository : IUserRepository
         var addedEntity = _context.Entry(user);
         addedEntity.State = EntityState.Modified;
         _context.SaveChanges();
-        addedEntity.State = EntityState.Detached;    }
+        addedEntity.State = EntityState.Detached;
+        
+    }
 
    
 
@@ -102,13 +104,13 @@ public class UserRepository : IUserRepository
     public void MailSend(string mail,string code)
     {
         var email = new MimeMessage();
-        email.From.Add(MailboxAddress.Parse("avcikiz25@gmail.com"));
+        email.From.Add(MailboxAddress.Parse("erenkovalik@gmail.com"));
         email.To.Add(MailboxAddress.Parse(mail));
         email.Subject = "test mail";
         email.Body = new TextPart(TextFormat.Html) { Text = code };
         using var smtp = new SmtpClient();
         smtp.Connect("smtp.gmail.com",587,SecureSocketOptions.StartTls);
-        smtp.Authenticate("avcikiz25@gmail.com","ereh iztr wqqp eurz");
+        smtp.Authenticate("erenkovalik@gmail.com","ereh iztr wqqp eurz");
         smtp.Send(email);
         smtp.Disconnect(true);
         

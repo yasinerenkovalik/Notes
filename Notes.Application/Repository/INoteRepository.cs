@@ -1,5 +1,6 @@
 using System.Linq.Expressions;
 using Notes.Domail;
+using Notes.Persistence.DTOs;
 
 namespace Notes.Application.Repository;
 

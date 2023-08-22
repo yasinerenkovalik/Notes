@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Notes.Domail;
+using Notes.Persistence.DTOs;
 
 namespace Notes.Persistence.Repository;
 
@@ -14,6 +15,7 @@ public class Context : DbContext
     public DbSet<User> Users { get; set; }
 
     public DbSet<Note> Notes { get; set; }
+    public DbSet<UserDTO> UserDtos { get; set; }
 
 
 

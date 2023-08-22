@@ -16,10 +16,14 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy=>policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
 
 builder.Services.AddScoped<Context>();
+builder.Services.AddScoped<ElaticContext>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<INoteRepository, NoteRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<INoteService, NoteService>();
+builder.Services.AddScoped<IElasticSearcService, ElasticSerchService>();
+builder.Services.AddScoped<IElasticSearcRepository, ElasticSerchRepository>();
+
 
 
 
