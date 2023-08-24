@@ -30,7 +30,7 @@ public class NoteService:INoteService
 
     public string Delete(Note entity)
     {
-        noteService.Deleted(entity);
+        noteService.Delete(entity);
         return "result";
     }
 

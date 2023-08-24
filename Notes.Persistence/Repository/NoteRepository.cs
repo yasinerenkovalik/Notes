@@ -13,27 +13,23 @@ namespace Notes.Persistence.Repository
         {
             _context = context;
         }
-        public void Add(Note note)
+        public bool Add(Note note)
         {
             var addedEntity = _context.Entry(note);
             addedEntity.State = EntityState.Added;
             _context.SaveChanges();
             addedEntity.State = EntityState.Detached;
+            return true;
         }
-
-        public void Deleted(Note note)
-        {
-            var addedEntity = _context.Entry(note);
-            addedEntity.State = EntityState.Deleted;
-            _context.SaveChanges();
-            addedEntity.State = EntityState.Detached;
-        }
-
-      
-
         public Note? Get(Expression<Func<Note?, bool>> filter)
         {
             return _context.Set<Note>().FirstOrDefault(filter);
+        }
+
+        public Note GetById(int id)
+        {
+            return _context.Set<Note>().FirstOrDefault(n => n.Id == id);
+            
         }
 
         public List<Note> GetUserNotes(int id)
@@ -43,7 +39,10 @@ namespace Notes.Persistence.Repository
 
         public void Delete(Note entity)
         {
-            throw new NotImplementedException();
+            var addedEntity = _context.Entry(entity);
+            addedEntity.State = EntityState.Deleted;
+            _context.SaveChanges();
+            addedEntity.State = EntityState.Detached;
         }
 
         public List<Note> GetAll(Expression<Func<Note, bool>>? filter = null)

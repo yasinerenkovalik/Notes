@@ -24,10 +24,7 @@ public class UserService:IUserService
         return "Böyle bir kullanıcı bulunmaktadır";
 
     }
-
-  
-
-    public string Update(UserDTO entity)
+    public string Update(User entity)
     {
         _userRepository.Update(entity);
         return "entity";
@@ -38,7 +35,7 @@ public class UserService:IUserService
 
     public string Delete(User entity)
     {
-        _userRepository.Deleted(entity);
+        _userRepository.Delete(entity);
         return "entity";
     }
 
@@ -50,7 +47,7 @@ public class UserService:IUserService
     
     public User GetById(int id)
     {
-        return _userRepository.GeyById(id) ?? throw new InvalidOperationException();
+        return _userRepository.GetById(id) ?? throw new InvalidOperationException();
     }
 
     public string Login(string email, string password)
@@ -62,6 +59,11 @@ public class UserService:IUserService
         }
 
         return "kullanıcı bulunamadı";
+    }
+
+    public string Update(UserDTO user)
+    {
+        throw new NotImplementedException();
     }
 
     public void SenMail(string mail)

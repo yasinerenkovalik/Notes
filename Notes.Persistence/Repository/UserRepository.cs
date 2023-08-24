@@ -9,7 +9,6 @@ using MimeKit;
 using MimeKit.Text;
 using Notes.Application.Repository;
 using Notes.Domail;
-using Notes.Persistence.DTOs;
 using Claim = System.Security.Claims.Claim;
 using JwtSecurityToken = System.IdentityModel.Tokens.Jwt.JwtSecurityToken;
 
@@ -22,6 +21,8 @@ public class UserRepository : IUserRepository
     {
         _context = context;
     }
+
+
     public bool Add(User user)
     {
         var login= _context.Set<User>().Where(n => n.Email == user.Email ).FirstOrDefault();
@@ -43,33 +44,21 @@ public class UserRepository : IUserRepository
         return false;
     }
 
-    public void Update(UserDTO user)
+    public void Update(User entity)
     {
-        var addedEntity = _context.Entry(user);
+        var addedEntity = _context.Entry(entity);
         addedEntity.State = EntityState.Modified;
         _context.SaveChanges();
         addedEntity.State = EntityState.Detached;
-        
     }
 
-   
-
-    public void Deleted(User user)
+    public void Delete(User entity)
     {
-        var addedEntity = _context.Entry(user);
+        var addedEntity = _context.Entry(entity);
         addedEntity.State = EntityState.Deleted;
         _context.SaveChanges();
         addedEntity.State = EntityState.Detached;
     }
-
-  
-
-    public User GeyById(int id)
-    {
-        return _context.Set<User>().FirstOrDefault(n => n.Id == id);
-    }
-    
-
     public string Login(string mail, string password)
     {
        var login= _context.Set<User>().Where(n => n.Email == mail && n.Password == password).FirstOrDefault();
@@ -116,6 +105,8 @@ public class UserRepository : IUserRepository
         
     }
 
+ 
+
     public List<User> GetAll(Expression<Func<User, bool>>? filter = null)
     {
         return filter == null ? _context.Set<User>().ToList() :
@@ -125,5 +116,10 @@ public class UserRepository : IUserRepository
     public User Get(Expression<Func<User, bool>> filter)
     {
         return _context.Set<User>().FirstOrDefault(filter);
+    }
+
+    public User GetById(int id)
+    {
+        return _context.Set<User>().FirstOrDefault(n => n.Id == id);
     }
 }

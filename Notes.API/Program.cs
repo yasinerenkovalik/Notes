@@ -1,3 +1,6 @@
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Notes.Application.Repository;
 using Notes.Application.Services;
 using Notes.Domail;
@@ -26,7 +29,6 @@ builder.Services.AddScoped<IElasticSearcRepository, ElasticSerchRepository>();
 
 
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -43,6 +45,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
 
 app.Run();
